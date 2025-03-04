@@ -1,34 +1,63 @@
 package dev.oleksii;
 
+import java.util.Scanner;
+
 public class Main {
+
     public static void main(String[] args) {
-        System.out.println("Welcome to the Battleship Game!");
-        char[][] board1 = new char[10][10];
-        char[][] board2 = new char[10][10];
 
-        for (int i = 0; i < 10; i++) {
-            for (int j = 0; j < 10; j++) {
-                board1[i][j] = '-';
-                board2[i][j] = '-';
+        Scanner scanner = new Scanner(System.in);
+        boolean exit = false;
+
+        while (!exit) {
+            displayHeader();
+            displayMenu();
+
+            if (!scanner.hasNextInt()) {
+                System.out.println("Invalid input. Please enter a number.");
+                scanner.next();
+                continue;
+            }
+
+            int choice = scanner.nextInt();
+
+            switch (choice) {
+                case 1:
+                    Game.start();
+                    break;
+                case 2:
+                    break;
+                case 3:
+                    System.out.println("Exiting the game...");
+                    exit = true;
+                    break;
+                default:
+                    System.out.println("Invalid option. Please try again.");
             }
         }
+        scanner.close();
+    }
 
-        System.out.println("  Player 1                         Player 2");
-        System.out.println();
+    public static void displayHeader() {
+        System.out.println("""
+                ██████╗  █████╗ ████████╗████████╗██╗     ███████╗███████╗██╗  ██╗██╗██████╗\s
+                ██╔══██╗██╔══██╗╚══██╔══╝╚══██╔══╝██║     ██╔════╝██╔════╝██║  ██║██║██╔══██╗\s
+                ██████╔╝███████║   ██║      ██║   ██║     █████╗  ███████╗███████║██║██████╔╝
+                ██╔══██╗██╔══██║   ██║      ██║   ██║     ██╔══╝  ╚════██║██╔══██║██║██╔═══╝\s
+                ██████╔╝██║  ██║   ██║      ██║   ███████╗███████╗███████║██║  ██║██║██║\s
+                ╚═════╝ ╚═╝  ╚═╝   ╚═╝      ╚═╝   ╚══════╝╚══════╝╚══════╝╚═╝  ╚═╝╚═╝╚═╝\s
+                """);
+    }
 
-        System.out.println("  1 2 3 4 5 6 7 8 9 10             1 2 3 4 5 6 7 8 9 10");
-
-        for (int i = 0; i < 10; i++) {
-            System.out.print((char) ('A' + i) + " ");
-            for (int j = 0; j < 10; j++) {
-                System.out.print(board1[i][j] + " ");
-            }
-            System.out.print("         ");
-            System.out.print("  " + (char) ('A' + i) + " ");
-            for (int j = 0; j < 10; j++) {
-                System.out.print(board2[i][j] + " ");
-            }
-            System.out.println();
-        }
+    public static void displayMenu() {
+        System.out.println("""
+                ╔══════════════════════════════════════════╗
+                ║         Please choose an option:         ║
+                ╠══════════════════════════════════════════╣
+                ║         1. Start New Game                ║
+                ║         2. Watch Previous Game           ║
+                ║         3. Exit                          ║
+                ╚══════════════════════════════════════════╝
+                """);
     }
 }
