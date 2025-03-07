@@ -5,13 +5,13 @@ import java.util.Set;
 
 public class Ship {
     // The ship's name (e.g., "Carrier", "Battleship")
-    private final String NAME;
+    private final String name;
     // The ship's size, representing how many grid cells it occupies
-    private final int SIZE;
+    private final int size;
     // The set of coordinates where the ship is located on the board
-    private Set<Coordinate> coordinates;
+    private final Set<Coordinate> coordinates;
     // The set of coordinates that have been hit on this ship
-    private Set<Coordinate> hits;
+    private final Set<Coordinate> hits;
 
     /**
      * Constructs a Ship with a given name and size.
@@ -20,8 +20,8 @@ public class Ship {
      * @param size The number of grid cells the ship occupies.
      */
     public Ship(String name, int size) {
-        this.NAME = name;
-        this.SIZE = size;
+        this.name = name;
+        this.size = size;
         // Initialize the sets for coordinates and hits
         coordinates = new HashSet<>();
         hits = new HashSet<>();
@@ -55,7 +55,7 @@ public class Ship {
         // Clear any existing coordinates (optional, if repositioning is allowed)
         coordinates.clear();
         // Calculate and add each coordinate based on the ship's size and orientation.
-        for (int i = 0; i < SIZE; i++) {
+        for (int i = 0; i < size; i++) {
             if (horizontal) {
                 // For horizontal placement, increase column index
                 coordinates.add(new Coordinate(row, col + i));
@@ -73,21 +73,21 @@ public class Ship {
      * @return True if the ship is sunk; false otherwise.
      */
     public boolean isSunk() {
-        return hits.size() == SIZE;
+        return hits.size() == size;
     }
 
     /**
      * @return The ship's name.
      */
     public String getName() {
-        return NAME;
+        return name;
     }
 
     /**
      * @return The number of cells the ship occupies.
      */
     public int getSize() {
-        return SIZE;
+        return size;
     }
 
     /**

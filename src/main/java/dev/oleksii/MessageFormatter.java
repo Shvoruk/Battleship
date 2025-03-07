@@ -96,5 +96,4 @@ public class MessageFormatter {
         // Print the entire box.
         System.out.println(sb);
     }
-
 }
