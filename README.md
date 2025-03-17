@@ -1,20 +1,6 @@
-<style>
-.fixed-logo {
-    font-family: monospace;
-    white-space: pre;
-    color: deepskyblue;
-}
-</style>
+# Battleship Game
 
-<p class="fixed-logo">
-██████╗  █████╗ ████████╗████████╗██╗     ███████╗███████╗██╗  ██╗██╗██████╗  
-██╔══██╗██╔══██╗╚══██╔══╝╚══██╔══╝██║     ██╔════╝██╔════╝██║  ██║██║██╔══██╗  
-██████╔╝███████║   ██║      ██║   ██║     █████╗  ███████╗███████║██║██████╔╝  
-██╔══██╗██╔══██║   ██║      ██║   ██║     ██╔══╝  ╚════██║██╔══██║██║██╔═══╝  
-██████╔╝██║  ██║   ██║      ██║   ███████╗███████╗███████║██║  ██║██║██║      
-╚═════╝ ╚═╝  ╚═╝   ╚═╝      ╚═╝   ╚══════╝╚══════╝╚══════╝╚═╝  ╚═╝╚═╝╚═╝      
-</p>
-
+[![License](https://img.shields.io/github/license/Shvoruk/Battleship.svg?style=flat-square)](https://github.com/Shvoruk/Battleship/blob/master/LICENSE) [![Releases](https://img.shields.io/github/release/Shvoruk/Battleship/all.svg?include_prereleases&style=flat-square)](https://github.com/Shvoruk/Battleship/releases) [![Code Coverage](https://codecov.io/github/Shvoruk/Battleship/branch/master/graph/badge.svg?token=ob1cArXXM6)](https://app.codecov.io/github/Shvoruk/Battleship)
 
 ## ⚓️ About the Project
 
@@ -30,8 +16,6 @@ Currently, the game offers:
 - **Ocean Mode (20×20 board, extended fleet for longer battles)**
 
 This project is **still under development**, and new changes may be introduced in future updates. However, the current version is fully playable and implements all core mechanics.
-
-![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)
 
 ## 🎣 Features
 
