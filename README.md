@@ -1,6 +1,8 @@
 # Battleship Game
 
-[![License](https://img.shields.io/github/license/Shvoruk/Battleship.svg?style=flat-square)](https://github.com/Shvoruk/Battleship/blob/master/LICENSE) [![Releases](https://img.shields.io/github/release/Shvoruk/Battleship/all.svg?include_prereleases&style=flat-square)](https://github.com/Shvoruk/Battleship/releases) [![Code Coverage](https://codecov.io/github/Shvoruk/Battleship/branch/master/graph/badge.svg?token=ob1cArXXM6)](https://app.codecov.io/github/Shvoruk/Battleship)
+[![License](https://img.shields.io/github/license/Shvoruk/Battleship.svg?style=rounde)](https://github.com/Shvoruk/Battleship/blob/master/LICENSE) 
+[![Releases](https://img.shields.io/github/release/Shvoruk/Battleship/all.svg?include_prereleases&style=rounded)](https://github.com/Shvoruk/Battleship/releases) 
+![Master Build Status](https://img.shields.io/github/actions/workflow/status/Shvoruk/Battleship/main.yml?branch=master)
 
 ## ⚓️ About the Project
 
