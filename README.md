@@ -47,7 +47,7 @@ To get started with the game, follow these steps:
 
 1. **Clone the Repository**
    ```sh
-   git clone https://github.com/Shvoruk/Battleship.git
+   git clone https://github.com/Shvoruk/Battleship
 2. **Navigate to the Project directory**
    ```sh
    cd Battleship
